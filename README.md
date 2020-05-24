@@ -1,5 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## SImple Task Manager
+React App for Simple Task Manager
 
+Type the task in input field and then click on Add Task Button to add it.
+
+Click on Remove button to remove it from the list
 ## Available Scripts
 
 In the project directory, you can run:

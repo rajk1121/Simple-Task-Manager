@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { ADD, TYPE, DELETE } from './actions';
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.store = this.props.store;
+    // console.log(this.store.getState())
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  }
+  handleAdd = (e) => {
+    this.store.dispatch(ADD());
+    // console.log(this.store.getState())
+  }
+  handleChange = (e) => {
+    this.store.dispatch(TYPE(e.currentTarget.value));
+  }
+  handleRemove = (e) => {
+    this.store.dispatch(DELETE(e.target.getAttribute('name')));
+  }
+  render() {
+
+    if (this.store.getState()) {
+      var table = this.store.getState().arr.map((val, i) => {
+        return (
+
+
+          <tr key={i}>
+            <td>{i + 1}</td>
+            <td>{val}</td>
+            <td><button className='btn-danger' onClick={this.handleRemove} name={i}>Remove</button></td>
+          </tr>
+        )
+      })
+    }
+    return (
+      <div className='container'>
+        <h1>Welcome to Task Manager</h1>
+        <input onChange={this.handleChange} value={this.props.store.text}></input>
+        <button className='btn-primary' onClick={this.handleAdd}>Add Task</button>
+        <br></br>
+        <table className='table'>
+          <thead><tr><th>S. No</th><th>Description</th><th>Remove</th></tr></thead>
+          <tbody>{table}</tbody>
+        </table>
+
+      </div>
+    )
+  }
 }
 
 export default App;
