@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Simple-Task-Manager/static/css/main.5f361e03.chunk.css",
+    "main.js": "/Simple-Task-Manager/static/js/main.f7ea23d4.chunk.js",
+    "main.js.map": "/Simple-Task-Manager/static/js/main.f7ea23d4.chunk.js.map",
+    "runtime-main.js": "/Simple-Task-Manager/static/js/runtime-main.612043db.js",
+    "runtime-main.js.map": "/Simple-Task-Manager/static/js/runtime-main.612043db.js.map",
+    "static/js/2.530555cc.chunk.js": "/Simple-Task-Manager/static/js/2.530555cc.chunk.js",
+    "static/js/2.530555cc.chunk.js.map": "/Simple-Task-Manager/static/js/2.530555cc.chunk.js.map",
+    "index.html": "/Simple-Task-Manager/index.html",
+    "precache-manifest.5374b15fad84a67e74b6f806778331ad.js": "/Simple-Task-Manager/precache-manifest.5374b15fad84a67e74b6f806778331ad.js",
+    "service-worker.js": "/Simple-Task-Manager/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/Simple-Task-Manager/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.530555cc.chunk.js.LICENSE.txt": "/Simple-Task-Manager/static/js/2.530555cc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.612043db.js",
+    "static/js/2.530555cc.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f7ea23d4.chunk.js"
+  ]
+}
