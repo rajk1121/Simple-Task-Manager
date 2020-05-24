@@ -7,7 +7,8 @@ Click on Remove button to remove it from the list
 ## Available Scripts
 
 In the project directory, you can run:
-
+###  `npm install`
+TO install all the dependencies required for the project
 ### `yarn start` OR `npm start`
 
 Runs the app in the development mode.<br />
