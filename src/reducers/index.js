@@ -22,7 +22,9 @@ export default (state = initialState, action) => {
                 return true;
 
             })
-            console.log(state.arr)
+            // console.log(state.arr)
             return Object.assign({}, state);
+        case 'Initial':
+            return Object.assign({}, state)
     }
 }

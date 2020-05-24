@@ -15,3 +15,8 @@ export const DELETE = (name) => {
         'name': name
     }
 }
+export const INITIAL = () => {
+    return {
+        'type': 'Initial'
+    }
+}

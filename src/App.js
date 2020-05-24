@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { ADD, TYPE, DELETE } from './actions';
+import { ADD, TYPE, DELETE, INITIAL } from './actions';
 class App extends Component {
   constructor(props) {
     super(props);
     this.store = this.props.store;
+    this.store.dispatch(INITIAL())
     // console.log(this.store.getState())
 
   }
@@ -36,7 +37,7 @@ class App extends Component {
     return (
       <div className='container'>
         <h1>Welcome to Task Manager</h1>
-        <input onChange={this.handleChange} value={this.props.store.text}></input>
+        <input value={this.store.getState().text} onChange={this.handleChange}></input>
         <button className='btn-primary' onClick={this.handleAdd}>Add Task</button>
         <br></br>
         <table className='table'>
